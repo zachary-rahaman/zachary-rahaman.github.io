@@ -62,6 +62,12 @@ body {
   .tab-content.active {
     display: block;
   }
+
+  .about-section {
+    padding: 2rem;
+    text-align: center;
+    animation: slideFadeIn 1.2s ease-out;
+  }
   
   .bio-pic {
     width: 150px;
@@ -72,8 +78,8 @@ body {
   }
 
   .bio-pic {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 1rem;
@@ -82,15 +88,18 @@ body {
   }
 
   .bio-pic:hover {
-    transform: scale(1.05);
+    transform: scale(1.25);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   }
   
-  @keyframes fadeIn {
-    from {
+  @keyframes slideFadeIn {
+    0% {
       opacity: 0;
+      transform: translateY(30px);
     }
-    to {
+    100% {
       opacity: 1;
+      transform: translateY(0);
     }
   }
+  
