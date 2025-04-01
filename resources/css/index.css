@@ -5,13 +5,14 @@
   text-align: center;
 }
 
-.centered-title {
+.centered-title { 
   top: 40%;
   transform: translateY(-50%);
   font-size: 3rem;
 }
 
 .top-title {
+  transition: all 0.8s ease;
   top: 20px;
   transform: none;
   font-size: 2rem;
