@@ -55,15 +55,12 @@ body {
   }
   
   .tab-content {
-    visibility: hidden;
-    opacity: 0;
+    display: none;
     animation: fadeIn 1s ease-in;
-    transition: visibility 0s, opacity 1s ease-in;
   }
   
   .tab-content.active {
-    visibility: visible;
-    opacity: 1;
+    display: block;
   }
   
   .bio-pic {
@@ -72,6 +69,21 @@ body {
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 1rem;
+  }
+
+  .bio-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .bio-pic:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   }
   
   @keyframes fadeIn {
