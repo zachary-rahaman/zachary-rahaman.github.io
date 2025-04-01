@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+  <link rel="stylesheet" href="about.css">
+</head>
+<body>
+  <!-- About Me Section -->
+  <div id="about" class="about-section">
+    <h1>About Me</h1>
+    <div class="tabs">
+      <button class="tab-btn" onclick="showTab('bio')">Bio</button>
+      <button class="tab-btn" onclick="showTab('projects')">Projects</button>
+      <button class="tab-btn" onclick="showTab('qualifications')">Qualifications</button>
+    </div>
+    <div id="bio" class="tab-content active">
+      <img src="https://via.placeholder.com/150" alt="Your Picture" class="bio-pic">
+      <p>Hi! I’m learning web development and building my portfolio from scratch. I love clean design, animations, and coding my own path. 🧠✨</p>
+    </div>
+    <div id="projects" class="tab-content">
+      <p>Project 1: Coming Soon!</p>
+      <p>Project 2: Stay tuned!</p>
+    </div>
+    <div id="qualifications" class="tab-content">
+      <p>Currently learning HTML, CSS, and JavaScript through Codecademy.</p>
+      <p>Previous experience in creative design and self-directed learning.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
