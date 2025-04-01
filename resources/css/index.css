@@ -1,6 +1,7 @@
 #site-title {
-  z-index: 4;
-  background-color: #f4f4f4;
+  z-index: 2;
+  background-color: transparent;
+  pointer-events: none;
   transition: all 0.8s ease;
   position: absolute;
   width: 100%;
