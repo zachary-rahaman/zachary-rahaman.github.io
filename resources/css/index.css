@@ -12,11 +12,12 @@
 }
 
 .top-title {
-  transition: all 0.8s ease;
-  top: 20px;
-  transform: none;
-  font-size: 2rem;
   position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  transition: all 0.8s ease;
 }
 
 body {
