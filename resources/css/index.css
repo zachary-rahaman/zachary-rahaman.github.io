@@ -1,3 +1,23 @@
+.site-title {
+  transition: all 0.8s ease;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+
+.centered-title {
+  top: 40%;
+  transform: translateY(-50%);
+  font-size: 3rem;
+}
+
+.top-title {
+  top: 20px;
+  transform: none;
+  font-size: 2rem;
+  position: fixed;
+}
+
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
@@ -14,16 +34,16 @@ body {
   animation: fadeIn 2s ease-in-out;
 }
 
-h1 {
-  font-size: 3rem;
-  margin: 0;
+.hidden {
+  display: none;
 }
 
 p {
   margin: 1rem 0;
 }
 
-.enter-btn {
+.enter-btn,
+.tab-btn {
   padding: 0.75rem 1.5rem;
   margin: 10px;
   border: none;
@@ -37,8 +57,43 @@ p {
   display: inline-block;
 }
 
-.enter-btn:hover {
+.enter-btn:hover,
+.tab-btn:hover {
   transform: scale(1.05);
+}
+
+.about-section {
+  padding: 2rem;
+  text-align: center;
+  animation: slideFadeIn 1.2s ease-out;
+}
+
+.tabs {
+  margin-bottom: 1.5rem;
+}
+
+.tab-content {
+  display: none;
+  animation: fadeIn 1s ease-in;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.bio-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bio-pic:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 @keyframes fadeIn {
@@ -47,5 +102,16 @@ p {
   }
   to {
     opacity: 1;
+  }
+}
+
+@keyframes slideFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
