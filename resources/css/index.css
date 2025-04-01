@@ -1,4 +1,6 @@
 #site-title {
+  z-index: 2;
+  background-color: #f4f4f4;
   transition: all 0.8s ease;
   position: absolute;
   width: 100%;
@@ -65,6 +67,7 @@ p {
 }
 
 .about-section {
+  padding-top: 4rem;;
   padding: 2rem;
   text-align: center;
   animation: slideFadeIn 1.2s ease-out;
