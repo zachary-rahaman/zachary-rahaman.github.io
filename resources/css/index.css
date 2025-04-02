@@ -1,37 +1,20 @@
-#site-title {
-  z-index: 2;
-  background-color: transparent;
-  pointer-events: none;
-  transition: all 0.8s ease;
-  position: absolute;
-  width: 100%;
-  text-align: center;
-}
-
-.buffer {
-  height: 8rem; 
-}
-
-.centered-title { 
-  top: 40%;
-  transform: translateY(-50%);
-  font-size: 3rem;
-}
-
-.top-title {
-  position: fixed;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 2rem;
-  transition: all 0.8s ease;
-}
-
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
   background-color: #f4f4f4;
   color: #333;
+}
+
+#site-title {
+  text-align: center;
+  font-size: 3rem;
+  margin: 5rem auto 2rem auto;
+  transition: font-size 0.5s ease, margin 0.5s ease;
+}
+
+.top-title {
+  font-size: 2rem;
+  margin: 2rem auto;
 }
 
 .centered {
@@ -72,7 +55,6 @@ p {
 }
 
 .about-section {
-  padding-top: 2rem;
   padding: 2rem;
   text-align: center;
   animation: slideFadeIn 1.2s ease-out;
