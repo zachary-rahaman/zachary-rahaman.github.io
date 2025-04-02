@@ -34,10 +34,29 @@ p {
   margin: 1rem 0;
 }
 
+#welcome {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  animation: fadeIn 2s ease-in-out;
+}
+
+#welcome h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  transition: font-size 0.5s ease, margin 0.5s ease;
+}
+
+#welcome p {
+  margin: 0.5rem 0 1.5rem;
+}
+
 .enter-btn,
 .tab-btn {
   padding: 0.75rem 1.5rem;
-  margin: 10px;
   border: none;
   background-color: #333;
   color: white;
