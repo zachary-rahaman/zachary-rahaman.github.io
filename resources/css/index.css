@@ -36,7 +36,7 @@ p {
 
 .enter-btn,
 .tab-btn {
-  padding: 0.75rem 7rem;
+  padding: 0.75rem 1.5rem;
   margin: 10px;
   border: none;
   background-color: #333;
@@ -74,8 +74,8 @@ p {
 }
 
 .bio-pic {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 1rem;
@@ -84,7 +84,7 @@ p {
 }
 
 .bio-pic:hover {
-  transform: scale(1.15);
+  transform: scale(1.05);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
