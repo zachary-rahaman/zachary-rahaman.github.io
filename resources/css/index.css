@@ -46,8 +46,7 @@ p {
   cursor: pointer;
   transition: transform 0.3s ease;
   text-decoration: none;
-  align-items: center;
-  justify-content: center;
+  display: inline-block;
 }
 
 .enter-btn:hover,
