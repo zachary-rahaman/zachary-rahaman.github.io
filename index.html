@@ -1,45 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Zachary Rahaman</title>
-  <link rel="stylesheet" href="resources/css/index.css">
+  <link rel="stylesheet" href="resources/css/index.css" />
 </head>
 <body>
- 
-<!-- Shared Title -->
-<h1 id="site-title" class="title centered-title">Zachary Rahaman</h1>
 
-<!-- Welcome Section -->
-<div id="welcome">
-  <h1 id="site-title" class="centered-title">Zachary Rahaman</h1>
-  <p>Web Developer in Progress</p>
-  <button class="enter-btn" onclick="enterSite()">Enter</button>
-</div>
+  <!-- Welcome Section -->
+  <div id="welcome">
+    <h1 id="site-title" class="centered-title">Zachary Rahaman</h1>
+    <p>Web Developer in Progress</p>
+    <button class="enter-btn" onclick="enterSite()">Enter</button>
+  </div>
 
+  <!-- About Section -->
+  <div id="about" class="about-section hidden">
+    <div class="tabs">
+      <button class="tab-btn" onclick="showTab('bio')">Bio</button>
+      <button class="tab-btn" onclick="showTab('projects')">Projects</button>
+      <button class="tab-btn" onclick="showTab('qualifications')">Qualifications</button>
+    </div>
+    <div id="bio" class="tab-content active">
+      <img src="resources/img/profile.jpg" alt="Your Picture" class="bio-pic" />
+      <p>Hi! I’m learning web development and building my portfolio from scratch. I love clean design, animations, and coding my own path.</p>
+    </div>
+    <div id="projects" class="tab-content">
+      <p>Project 1: Coming Soon!</p>
+      <p>Project 2: Stay tuned!</p>
+    </div>
+    <div id="qualifications" class="tab-content">
+      <p>Currently learning HTML, CSS, and JavaScript through Codecademy.</p>
+      <p>Previous experience in creative design and self-directed learning.</p>
+    </div>
+  </div>
 
-<!-- About Section -->
-<div id="about" class="about-section hidden">
-  <div class="tabs">
-    <button class="tab-btn" onclick="showTab('bio')">Bio</button>
-    <button class="tab-btn" onclick="showTab('projects')">Projects</button>
-    <button class="tab-btn" onclick="showTab('qualifications')">Qualifications</button>
-  </div>
-  <div id="bio" class="tab-content active">
-    <img src="profile.jpg" alt="Your Picture" class="bio-pic">
-    <p>Hi! I’m learning web development and building my portfolio from scratch. I love clean design, animations, and coding my own path. </p>
-  </div>
-  <div id="projects" class="tab-content">
-    <p>Project 1: Coming Soon!</p>
-    <p>Project 2: Stay tuned!</p>
-  </div>
-  <div id="qualifications" class="tab-content">
-    <p>Currently learning HTML, CSS, and JavaScript through Codecademy.</p>
-    <p>Previous experience in creative design and self-directed learning.</p>
-  </div>
-</div>
-
-<script src="resources/js/script.js"></script>
+  <script src="resources/js/script.js"></script>
 </body>
 </html>
