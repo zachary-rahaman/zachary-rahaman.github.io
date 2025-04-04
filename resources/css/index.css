@@ -101,6 +101,12 @@ p {
   display: block;
 }
 
+#bio p {
+  text-align: justify;
+  margin-left: 2rem; 
+  margin-right: 2rem;
+}
+
 .bio-pic {
   width: 250px;
   height: 250px;
