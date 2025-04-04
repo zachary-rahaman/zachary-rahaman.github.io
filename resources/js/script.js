@@ -7,7 +7,9 @@ function showTab(tabId) {
 function enterSite() {
     document.getElementById('welcome').classList.add('hidden');
     document.getElementById('about').classList.remove('hidden');
+  
     const title = document.getElementById('site-title');
     title.classList.remove('centered-title');
     title.classList.add('top-title');
-}
+  }
+  
